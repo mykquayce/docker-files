@@ -1,6 +1,5 @@
 FROM mariadb:latest
 ADD ./ca.pem /var/lib/mysql/
-ADD ./mariadb.pem /var/lib/mysql/server-cert.pem
-ADD ./mariadb_key.pem /var/lib/mysql/server-key.pem
+ADD ./mariadb.pem /var/lib/mysql/
+ADD ./mariadb_key.pem /var/lib/mysql/
 ADD ./mariadb.cnf /etc/mysql/mariadb.conf.d/
-CMD ["mariadbd"]

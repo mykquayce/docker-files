@@ -1,4 +1,4 @@
 [mysqld]
 ssl_ca=ca.pem
-ssl_cert=server-cert.pem
-ssl_key=server-key.pem
+ssl_cert=mariadb.pem
+ssl_key=mariadb_key.pem
