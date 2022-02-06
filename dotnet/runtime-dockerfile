@@ -1,4 +1,0 @@
-FROM mcr.microsoft.com/dotnet/runtime:latest
-ADD ./ca.crt /usr/local/share/ca-certificates/
-RUN update-ca-certificates
-CMD ["tail", "-f", "/dev/null"]
